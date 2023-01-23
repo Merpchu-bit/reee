@@ -1,0 +1,451 @@
+/******************************************************************************
+START Glitch hello-app default styles
+
+The styles in this section do some minimal CSS resets, set default fonts and 
+colors, and handle the layout for our footer and "Remix on Glitch" button. If
+you're new to CSS they may seem a little complicated, but you can scroll down
+to this section's matching END comment to see page-specific styles.
+******************************************************************************/
+
+/* 
+  The style rules specify elements by type and by attributes such as class and ID
+  Each section indicates an element or elements, then lists the style properties to apply
+  See if you can cross-reference the rules in this file with the elements in index.html
+*/
+
+/* Our default values set as CSS variables */
+:root {
+  --color-bg: #eb6434;
+  --color-text-main: #000000;
+}
+
+/* Basic page style resets */
+* {
+  box-sizing: border-box;
+}
+[hidden] {
+  display: none !important;
+}
+
+/* Import fonts */
+
+/* Our remix on glitch button */
+
+/* Navigation grid */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem auto 0;
+  padding: 1rem 0 0.75rem 0;
+  width: 100%;
+  flex-wrap: wrap;
+  border-top: 4px solid #ffffff;
+}
+
+.divider {
+  padding: 0 1rem;
+}
+/******************************************************************************
+END Glitch hello-app default styles
+******************************************************************************/
+
+body {
+  background-color: var(--color-bg);
+}
+
+/* Page structure */
+.wrapper {
+  min-height: var(--wrapper-height);
+  display: grid;
+  place-items: center;
+  margin: 0 1rem;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Very light scaling for our illustration */
+.title {
+  color: #50808e;
+  font-family: "Patrick Hand", cursive;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 98%;
+  margin: 10px;
+  padding: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+  transition: all 300ms ease-in-out;
+  display: flex;
+  background-image: url("https://cutewallpaper.org/22/orange-sky-aesthetic-wallpapers/193512726.jpg");
+  background-color: #eb6434;
+  height: 250px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.start {
+  position: sticky;
+  top: 20px;
+  height: 30%;
+}
+
+.purpose {
+  display: flex;
+  justify-content: center;
+  margin: 28px;
+  padding: 20px;
+}
+
+.Purpose {
+  margin: 87px;
+  padding: 10px;
+}
+
+.projects {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+  padding: 20px;
+}
+
+.Projects {
+  margin: 8px;
+  padding: 10px;
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+  margin: 25px;
+}
+
+.Contacts {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+  padding: 20px;
+}
+
+/* Very light scaling for our illustration */
+.illustration {
+  max-width: 100%;
+  max-height: var(--image-max-width);
+  margin-top: var(--image-margin);
+}
+
+/* Instructions */
+.instructions {
+  margin: 1rem auto 0;
+}
+
+/* Button - Add it from the README instructions */
+button,
+input {
+  font-family: inherit;
+  font-size: 100%;
+  background: #ffffff;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 0.5rem 1rem;
+  transition: 500ms;
+}
+
+/* Subheading */
+
+/* h1 will be tittles for certain paragraphs*/
+h1 {
+  font-family: "Patrick Hand", cursive;
+  font-style: normal;
+}
+
+/*I don't know what this will be for yet*/
+h2 {
+  color: #880d1e;
+  font-family: "Balsamiq Sans", cursive;
+}
+
+/*This'll be normal text font*/
+p {
+  font-family: "Balsamiq Sans", cursive;
+}
+
+/* Interactive image */
+img {
+  height: 210px;
+  width: auto;
+}
+
+.em1 {
+  display: flex;
+  width: auto;
+  height: 40px;
+  border-radius: 20px;
+  border: 3px solid #880d1e;
+}
+.em1:hover {
+  position: relative;
+  top: -25px;
+  left: 0px;
+  width: 60px;
+  height: auto;
+  z-index: 999;
+}
+
+#em {
+  width: auto;
+  height: 40px;
+  border-radius: 20px;
+  border: 3px solid #880d1e;
+}
+
+#em2:hover {
+  position: relative;
+  top: -25px;
+  left: 0px;
+  width: 60px;
+  height: auto;
+  z-index: 999;
+}
+
+.em3 {
+  width: auto;
+  height: 40px;
+  border-radius: 20px;
+  border: 3px solid #880d1e;
+}
+
+.em3:hover {
+  position: relative;
+  top: -25px;
+  left: 0px;
+  width: 60px;
+  height: auto;
+  z-index: 999;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: #cbeef3;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #bd31a2;
+  color: rgba(255, 255, 255, 0.88);
+}
+ul {
+  list-style-type: none;
+}
+
+/* scroll stuff */
+.scroll-down header {
+  transform: translate3d(0, -100%, 0);
+}
+
+.scroll-up header {
+  filter: drop-shadow(0 10px 20px rbg(255, 234, 99));
+}
+
+.dropbtn {
+  background-color: #fc8047;
+  color: #1d0b02;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  font-family: "Balsamiq Sans", cursive;
+}
+
+.dropbtn:hover,
+.dropbtn:focus {
+  background-color: #50808e;
+  color: white;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown a:hover {
+  background-color: #7851a9;
+}
+
+.phone {
+  display: flex;
+  justify-content: center;
+}
+.show {
+  display: block;
+}
+
+#TakayanP {
+  color: #880d1e;
+  font-family: "Balsamiq Sans", cursive;
+  margin: 20px;
+  text-decoration: none;
+  font-size: 25px;
+}
+
+#TakayanP:hover {
+  color: #880d1e;
+  font-family: "Balsamiq Sans", cursive;
+  margin: 20px;
+  text-decoration: underline;
+  font-size: 25px;
+}
+
+#OJBOI {
+  color: #880d1e;
+  font-family: "Balsamiq Sans", cursive;
+  margin: 20px;
+  text-decoration: none;
+  font-size: 25px;
+}
+
+#OJBOI:hover {
+  color: #880d1e;
+  font-family: "Balsamiq Sans", cursive;
+  margin: 20px;
+  text-decoration: underline;
+  font-size: 25px;
+}
+
+#Extreme-spots {
+  color: #880d1e;
+  font-family: "Balsamiq Sans", cursive;
+  margin: 20px;
+  text-decoration: none;
+  font-size: 25px;
+}
+
+#Extreme-spots:hover {
+  color: #880d1e;
+  font-family: "Balsamiq Sans", cursive;
+  margin: 20px;
+  text-decoration: underline;
+  font-size: 25px;
+}
+
+
+#Random {
+  color: #880d1e;
+  font-family: "Balsamiq Sans", cursive;
+  margin: 20px;
+  text-decoration: none;
+  font-size: 25px;
+}
+
+#Random:hover {
+  color: #880d1e;
+  font-family: "Balsamiq Sans", cursive;
+  margin: 20px;
+  text-decoration: underline;
+  font-size: 25px;
+}
+/* Button dip
+- Toggling this class on and off will move it down and up again
+- The button transition property above determines the speed of the translate (500ms)
+*/
+.dipped {
+  transform: translateY(5px);
+}
+
+/* 
+Below will be an esperiment from here on out
+*/
+
+.flower {
+  width: 200px;
+  height: 200px;
+  position: relative;
+  margin: auto;
+}
+
+.petal {
+  position: absolute;
+  width: 100px;
+  height: 50px;
+  border-radius: 50%;
+  transform-origin: bottom;
+  animation: petal-bloom 3s infinite;
+}
+
+.petal:nth-child(1) {
+  background-color: #ff6699;
+  top: 0;
+  left: 50%;
+  transform: rotate(45deg) translateY(-100px);
+}
+
+.petal:nth-child(2) {
+  background-color: #ff99cc;
+  top: 0;
+  left: 25%;
+  transform: rotate(-45deg) translateY(-100px);
+}
+
+.petal:nth-child(3) {
+  background-color: #ffccff;
+  top: 100px;
+  left: 0;
+  transform: rotate(135deg) translateY(-100px);
+}
+
+.petal:nth-child(4) {
+  background-color: #cc99ff;
+  top: 100px;
+  left: 75%;
+  transform: rotate(-135deg) translateY(-100px);
+}
+
+@keyframes petal-bloom {
+  0% {
+    transform: rotate(45deg) translateY(-100px);
+  }
+  50% {
+    transform: rotate(45deg) translateY(0);
+  }
+  100% {
+    transform: rotate(45deg) translateY(-100px);
+  }
+}
+

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--
+      This is the page head - it contains info the browser uses to display the page
+      You won't see what's in the head in the page
+      Scroll down to the body element for the page content
+    -->
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="https://glitch.com/favicon.ico" />
+    <!-- Here is my fonts-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Patrick+Hand&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Here is the p font-->
+
+    <!-- 
+      This is an HTML comment
+      You can write text in a comment and the content won't be visible in the page
+    -->
+
+    <title>Merp's Portfolio!</title>
+
+    <!-- Meta tags for SEO and social sharing -->
+
+    <meta name="robots" content="index,follow" />
+    <meta property="og:title" content="Hello World!" />
+    <meta property="og:type" content="article" />
+
+    <!-- Import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+
+    <!-- Import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>
+  <body>
+    <!--
+      This is the body of the page
+      Look at the elements and see how they appear in the rendered page on the right
+      Each element is defined using tags, with < and > indicating where each one opens and closes
+      There are elements for sections of the page, images, text, and more
+      The elements include attributes referenced in the CSS for the page style
+    -->
+
+    <!-- The wrapper and content divs set margins and positioning -->
+    <div class="wrapper">
+      <div class="content" role="main">
+        <!-- This is the start of content for our page -->
+        <div class="start">
+          <header class="title">
+            Merp's Portfolio
+            <div class="inner-flex">
+              <nav>
+                <ul>
+                   <li><a href="index.html">Purpose</a></li>
+                  <li><a href="projects.html ">Projects</a></li>
+                  <li><a href="AboutMe.html">About Me</a></li>
+                  <li><a href="#three">Contacts</a></li>
+                </ul>
+              </nav>
+            </div>
+          </header>
+        </div>
+  
+        <footer class="footer"></footer>
+        
+      <div class="Projects">
+        <h2 class="projects" id="two">Projects</h2>
+        <p>
+          Welcome to my projects. Here will be a showcase of projects I've
+          either had a hand in or made myself. Of course, each project will have
+          a discription along with and image.
+        </p>
+      </div>
+        
+
+        <p>Click on the button to jump to a certain projects</p>
+
+<div class="dropdown">
+  <button onclick="menu()" class="dropbtn">Project list</button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="#TakayanP">Takayan</a>
+    <a href="#OJBOI">Orange Hunt</a>
+    <a href="#Extreme-spots">Rock Paper Scissors</a>
+    <a href="#Random">Random Gify</a>
+  </div>
+</div>
+
+        <a href="https://popcode.org/?snapshot=2c3d65b0-ff47-40b0-b5f4-fa159d494c43" id="TakayanP" target="_blank">Takayan Profile Page</a>
+        <video width="420" height="340" controls>
+          <source
+            src="https://cdn.glitch.global/dc5bae65-fa9c-4316-8b44-a3f8fa38c64b/Screen%20recording%202022-01-05%209.01.48%20PM.webm?v=1641438196938"
+            type="video/mp4"
+          />
+        </video>
+        <p>
+          This is a webpage based off a instagram profile of a famous artist
+          that me and a teammate liked. As shown in the video, there is a dropdown
+          menu where you can 'add to close friends', 'unfollow', and 'mute'. If
+          you click on any of the buttons, a popup, will appear and confirm your
+          action. Below the buttons, are images of some music the artist has
+          made. When hovering over the images, they will turn into the Youtube
+          videos, where you can listen to the actual songs. Me and my teammate
+          incorporated HTML, CSS, and Jquery into this project.
+        </p>
+
+        <a href="https://popcode.org/?snapshot=555a85d5-41f5-4d41-ac59-1b0543d42fe9" id="OJBOI" target="_blank">Orange Treasure Hunt</a>
+        <video width="420" height="340" controls>
+          <source
+            src="https://cdn.glitch.global/dc5bae65-fa9c-4316-8b44-a3f8fa38c64b/orangeHunt?v=1641441248725"
+            type="video/mp4"
+          />
+        </video>
+        <p>
+          This project is called "Orange Hunt!". It's a small digital adventure
+          to get some delicious oranges. The begining goes a follows, and there are two options that you can choose;
+          "Shake the tree!!" and Pick off theoranges. Pick an orange,leads you to the next scene.
+          Here, since your so weak, you need tools to get the oranges. Once you pick the right answer, you go to the next scene.
+          Lastly, you collect your oranges, yet they get napped. The "Shake the tree!!!" option, the story plays out relativly the same,
+          but you'll have some carma for disturbing nature. This project includes HTML, CSS, and Jquery (along with many many hours with it).
+          
+        </p>
+        
+        <a href="https://glitch.com/edit/#!/the-good-ol-rock" id="Extreme-spots" target="_blank">Rock Paper Scissors</a>
+        <video width="420" height="340" controls>
+          <source
+            src="https://cdn.glitch.global/577ff288-4aa9-49b8-a75b-d095735d5531/goku?v=1642632549251"
+            type="video/mp4"
+          />
+        </video>
+          <p>
+           This project is a silly rock paper scissors game where you go against a computer.
+            As you can see this is no regular rock paper scissors, but a fight to the death!
+            Not really. Anyway, if this epic battle isn't challenging enough then you can press the "want an extra Challenge?"
+            Where an extra character is unlocked for the user to use. Basically it's an instant win for the user.
+            
+          </p>
+
+        <a href="https://glitch.com/edit/#!/gify-project" id="Random" target="_blank">Random Gify</a>
+        <video width="420" height="340" controls>
+          <source
+            src="https://cdn.glitch.global/577ff288-4aa9-49b8-a75b-d095735d5531/Gifystar.webm?v=1654584882641"
+            type="video/mp4"
+          />
+        </video>
+          <p>
+           This project is one of my recent projects. 
+            Here, you begin by typing a keyword into the text box, press the enter button or simply press the enter key and your search will go through, bringing back a gif.
+            Honestly it was super difficult. This project took me probably a month to comprehend and be able to run how I wanted it to.
+            This project uses Javasript, API, CSS, and HTML.
+            
+          </p>
+
+        
+     
+    <!-- The footer holds our remix button — you can use it for structure or cut it out ✂ -->
+    <footer class="footer"></footer>
+    <div class="contacts">
+      <h1 id="three" class="Contacts">Contacts</h1>
+        <div class="icons">
+          <a href="https://github.com/Merpchu-bit?tab=repositories" target="_blank">
+          <img class="em1" src="https://play-lh.googleusercontent.com/PCpXdqvUWfCW1mXhH1Y_98yBpgsWxuTSTofy3NGMo9yBTATDyzVkqU580bfSln50bFU"/></a>
+          
+          
+            <img onclick="myFunction()" id="em2" src="https://static.vecteezy.com/system/resources/thumbnails/002/079/984/small/phone-icon-flat-style-isolated-on-grey-background-telephone-symbol-call-illustration-sign-for-web-and-mobile-app-free-vector.jpg"/>
+            
+          <a href="https://glitch.com/dashboard?group=owned&sortColumn=boost&sortDirection=DESC&page=1&showAll=false&filterDomain=" target="_blank">
+            <img class="em3" src="https://logos-world.net/wp-content/uploads/2021/03/Glitch-Logo-2018-present.png"></a>
+          
+        </div>
+      <div class="phone">
+        
+      
+          <img src="https://c.tenor.com/QTtX8fpH_DEAAAAM/akane-shinjo-anime.gif"/>
+    </div>
+      </div>
+  </body>
+</html>
